@@ -1,0 +1,169 @@
+* {
+  color: #fff !important;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+article, footer, header, input, section {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+header, footer {
+  border-radius: 25px;
+}
+
+h1, h3, p {
+  margin: 10px 0;
+  width: 100%;
+}
+
+a:active, a:focus, a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  border: 2px solid #ddd;
+  text-decoration: underline;
+}
+
+a {
+  border: 2px solid transparent;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 500;
+  margin: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url('https://cdn.eso.org/images/screen/eso2406a.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+}
+
+footer {
+  padding: 15px 15px;
+}
+
+header {
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+input {
+  padding: 3px 10px;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  margin: 5px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+td {
+  padding: 5px;
+}
+
+.gallery-section {
+  padding: 2rem 0;
+}
+
+.gallery-article {
+  margin-bottom: 2rem;
+}
+
+.gallery-caption {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.image-container {
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+}
+
+.image-container img {
+  height: 400px;
+  min-width: 400px;
+  object-fit: cover;
+  width: auto;
+}
+
+.image, .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav {
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (min-width: 992px) {
+  header a:active, header a:focus, header a:hover {
+    margin: 3px 4px;
+  }
+}
+
+@media (max-width: 992px) {
+  header a:active, header a:focus, header a:hover {
+    margin: 4px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .image-container {
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
